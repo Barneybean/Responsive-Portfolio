@@ -12,7 +12,6 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 body{
 /* style.css is not located in same folder as html */
     background: url("../images/background.png");
@@ -96,8 +95,24 @@ a:visited {
     margin:0px 0px 20px 0px;   
 }
 
+/* animation */
+@keyframes slide {
+    0% {left: 750px;}
+    100%{left:870px;}
+}
+
 #github{
     float: right;
+}
+
+#finger{
+    
+    position: relative;
+    left: 750px;
+    animation-name: slide;
+    animation-duration: 3s; 
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:3;
 }
 
 #linkedin{
@@ -213,6 +228,7 @@ h3{
     padding: 10px;
     
 }
+
 
 /* media query */
 
